@@ -1750,6 +1750,8 @@ MonoBehaviour:
   bounceMaterial: {fileID: 13400000, guid: 228bc7dab43dcb242adf9e64c3598855, type: 2}
   shootDelay: 2
   bulletLifetime: 5
+  stats:
+    shotsCount: 0
 --- !u!114 &2067504885
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1790,4 +1792,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c9b16b65558dec4e9609eec086d5198, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 100
+  settings: {fileID: 11400000, guid: 5a920002c486c37488df5bc0cbc54f08, type: 2}
+  shootAbility: {fileID: 2067504884}
