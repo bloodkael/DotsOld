@@ -17,7 +17,7 @@ public class UserInputData : MonoBehaviour, IConvertGameObjectToEntity
         dstManager.AddComponentData(entity, new MoveData { Speed = speed / 100, BaseSpeed = speed / 100, RotationSpeed = rotationSpeed });
         if (ShootAction != null && ShootAction is IAbility)
         {
-            dstManager.AddComponentData(entity, new ShootData());
+            dstManager.AddComponentData(entity, new ShootData { isBulletRebound = false });
         }
         if (AccelerateAction != null && AccelerateAction is IAbility)
         {
@@ -47,5 +47,5 @@ public struct AccelerateData : IComponentData
 
 public struct ShootData: IComponentData
 {
-
+    public bool isBulletRebound;
 }
